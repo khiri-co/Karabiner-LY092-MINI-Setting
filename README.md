@@ -1,6 +1,24 @@
 # Karabiner-LY092-MINI-Setting
 My [Karabiner](https://pqrs.org/osx/karabiner/index.html.ja) setting for [LY092-MINI](http://www.smartyao.com/page930.html) keyboard.
 
+## Usage
+in private.xml
+```xml
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>My Remaps</name>
+    <include path="{{ENV_HOME}}/github/Karabiner-LY092-MINI-Setting/LY092_MINI_base.xml" />
+  </item>
+</root>
+```
+
+* Code/Mouse Key Double down (&lt; 0.3sec) To its layer Lock.
+  * ![Lock.png](https://qiita-image-store.s3.amazonaws.com/0/45805/3af7bc72-2305-d609-68b6-a52e37228be4.png)
+  * And Code/Mouse down offs it's lock.
+
+# Setting
+
 ## Default
 ![keyboard-layout.png](https://qiita-image-store.s3.amazonaws.com/0/45805/113a6e3a-d3a0-de35-865f-75b3f7ac22af.png)
 
