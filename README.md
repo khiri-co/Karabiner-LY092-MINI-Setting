@@ -23,6 +23,9 @@ with Control or Command
 ### Fn_R
 ![keyboard-layout(6).png](https://qiita-image-store.s3.amazonaws.com/0/45805/b0afe9fe-b39d-d981-a08b-7e1023edf82f.png)
 
+## Mirror Layer
+![keyboard-layout(7).png](https://qiita-image-store.s3.amazonaws.com/0/45805/611f1bb8-02a0-3de3-cae1-1bfc43b04137.png)
+
 ## Mouse Layer
 ![keyboard-layout(8).png](https://qiita-image-store.s3.amazonaws.com/0/45805/a4449a51-dd91-9663-5e81-ef22bacd18f1.png)
 
