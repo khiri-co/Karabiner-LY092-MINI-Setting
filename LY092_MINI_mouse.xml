@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<root>
+  
+  <replacementdef>
+    <replacementname>KC_MOUSE</replacementname>
+    <replacementvalue>KeyCode::VK_MODIFIER_LYMINI_MOUSE_KEY_MODE</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>MF_MOUSE</replacementname>
+    <replacementvalue>ModifierFlag::LYMINI_MOUSE_KEY_MODE</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>KC_HS</replacementname>
+    <replacementvalue>KeyCode::VK_MOUSEKEY_HIGHSPEED</replacementvalue>
+  </replacementdef>
+  
+  <item>
+    <name>Fn2/Fn4 To Mouse/Scroll</name>
+    <identifier>my_remap.4ly092_mini.fn2_fn5.left_mouse</identifier>
+    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    
+    
+    <!-- for Modifier -->
+    <block>
+      <block><!-- Double Mouse Key down To Mouse-Lock -->
+        <lastreleasedphysicalkey_only>KeyCode::COMMAND_L</lastreleasedphysicalkey_only>
+        <lastpressedphysicalkey_only>KeyCode::COMMAND_L</lastpressedphysicalkey_only>
+        <elapsedtimesincelastreleased_lessthan>Millisecond::RawValue::300</elapsedtimesincelastreleased_lessthan>
+        <elapsedtimesincelastpressed_lessthan>Millisecond::RawValue::300</elapsedtimesincelastpressed_lessthan>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::VK_LOCK_LYMINI_MOUSE_KEY_MODE_FORCE_ON</autogen>
+      </block>
+      <block><!-- Double Mouse Key down To Mouse-Lock -->
+        <lastreleasedphysicalkey_only>KeyCode::KEYPAD_6</lastreleasedphysicalkey_only>
+        <lastpressedphysicalkey_only>KeyCode::KEYPAD_6</lastpressedphysicalkey_only>
+        <elapsedtimesincelastreleased_lessthan>Millisecond::RawValue::300</elapsedtimesincelastreleased_lessthan>
+        <elapsedtimesincelastpressed_lessthan>Millisecond::RawValue::300</elapsedtimesincelastpressed_lessthan>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_6, KeyCode::VK_LOCK_LYMINI_MOUSE_KEY_MODE_FORCE_ON</autogen>
+      </block>
+      <!-- When Mouse-Lock is on, Mouse Key down offs the Lock -->
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, {{KC_MOUSE}}, KeyCode::VK_LOCK_LYMINI_MOUSE_KEY_MODE_FORCE_OFF, {{KC_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_6, {{KC_MOUSE}}, KeyCode::VK_LOCK_LYMINI_MOUSE_KEY_MODE_FORCE_OFF, {{KC_MOUSE}}</autogen>
+      
+      <!-- basic -->
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, {{KC_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_6, {{KC_MOUSE}}</autogen>
+    </block>
+    
+    <!-- Left side -->
+    <block>
+      <!-- for Highspeed -->
+      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, {{MF_MOUSE}}, {{KC_HS}}, {{MF_MOUSE}}</autogen>
+      <!-- for Mouse Cursor -->
+      <autogen>__KeyToKey__ KeyCode::E, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_UP, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_DOWN, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_RIGHT, {{MF_MOUSE}}</autogen>
+      <!-- for Mouse Button -->
+      <autogen>__KeyToKey__ KeyCode::SPACE, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_BUTTON_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_BUTTON_RIGHT, {{MF_MOUSE}}</autogen>
+      <!-- for Scrollwheel -->
+      <autogen>__KeyToKey__ KeyCode::G, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_UP, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_DOWN, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, {{MF_MOUSE}}</autogen>
+    </block>
+    
+    <!-- Right side-->
+    <block>
+      <!-- for Highspeed -->
+      <autogen>__KeyToKey__ KeyCode::M, {{MF_MOUSE}}, {{KC_HS}}, {{MF_MOUSE}}</autogen>
+      <!-- for Mouse Cursor -->
+      <autogen>__KeyToKey__ KeyCode::P, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_UP, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_DOWN, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::QUOTE, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_RIGHT, {{MF_MOUSE}}</autogen>
+      <!-- for Mouse Button -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_BUTTON_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_2, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_BUTTON_RIGHT, {{MF_MOUSE}}</autogen>
+      <!-- for Scrollwheel -->
+      <autogen>__KeyToKey__ KeyCode::K, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_UP, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_DOWN, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_LEFT, {{MF_MOUSE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::SLASH, {{MF_MOUSE}}, KeyCode::VK_MOUSEKEY_SCROLL_RIGHT, {{MF_MOUSE}}</autogen>
+    </block>
+    
+    <!-- Ignore unmapped keys -->
+    <autogen>
+      __DropAllKeys__ {{MF_MOUSE}},
+      Option::DROPALLKEYS_DROP_KEY,
+      Option::DROPALLKEYS_DROP_CONSUMERKEY,
+    </autogen>
+  </item><!-- End of Mouse -->
+</root>

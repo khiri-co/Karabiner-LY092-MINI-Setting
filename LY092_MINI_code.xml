@@ -1,0 +1,103 @@
+<root>
+  <replacementdef>
+    <replacementname>KC_CODE</replacementname>
+    <replacementvalue>KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>MF_CODE</replacementname>
+    <replacementvalue>ModifierFlag::LYMINI_CODE_MODE</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>MF_SHIFT_L</replacementname>
+    <replacementvalue>ModifierFlag::SHIFT_L</replacementvalue>
+  </replacementdef>
+  
+  <item>
+    <name>Code Symbols</name>
+    <identifier>my_remap.4ly092_mini.code</identifier>
+    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    
+    <!-- for Modifier -->
+    <block>
+      <block><!-- Double Code Key down To Code-Lock -->
+        <lastreleasedphysicalkey_only>KeyCode::CURSOR_DOWN</lastreleasedphysicalkey_only>
+        <lastpressedphysicalkey_only>KeyCode::CURSOR_DOWN</lastpressedphysicalkey_only>
+        <elapsedtimesincelastreleased_lessthan>Millisecond::RawValue::300</elapsedtimesincelastreleased_lessthan>
+        <elapsedtimesincelastpressed_lessthan>Millisecond::RawValue::300</elapsedtimesincelastpressed_lessthan>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::VK_LOCK_LYMINI_CODE_MODE_FORCE_ON</autogen>
+      </block>
+      <!-- When Code-Lock is on, Code Key down offs the Lock -->
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, {{MF_CODE}}, KeyCode::VK_LOCK_LYMINI_CODE_MODE_FORCE_OFF, {{KC_CODE}}</autogen>
+      <!-- Shift_L + Code Key down To Sticky-Code On -->
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_L, KeyCode::VK_STICKY_LYMINI_CODE_MODE_FORCE_ON, {{KC_CODE}}</autogen>
+      
+      <!-- Basic -->
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, {{KC_CODE}}</autogen>
+    </block>
+    
+    <!-- Left side -->
+    <block>
+      <!-- Middle1 -->
+      <autogen>__KeyToKey__ KeyCode::Q, {{MF_CODE}}, KeyCode::1, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::W, {{MF_CODE}}, KeyCode::2, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, {{MF_CODE}}, KeyCode::3, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, {{MF_CODE}}, KeyCode::BRACKET_LEFT, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, {{MF_CODE}}, KeyCode::BRACKET_RIGHT, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, {{MF_CODE}}, KeyCode::BACKSLASH, {{MF_SHIFT_L}}</autogen>
+      <!-- Middle2 -->
+      <autogen>__KeyToKey__ KeyCode::A, {{MF_CODE}}, KeyCode::4, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, {{MF_CODE}}, KeyCode::5, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, {{MF_CODE}}, KeyCode::6, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, {{MF_CODE}}, KeyCode::BRACKET_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, {{MF_CODE}}, KeyCode::BRACKET_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, {{MF_CODE}}, KeyCode::BACKSLASH</autogen>
+      <!-- Bottom1 -->
+      <autogen>__KeyToKey__ KeyCode::Z, {{MF_CODE}}, KeyCode::7, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, {{MF_CODE}}, KeyCode::8, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, {{MF_CODE}}, KeyCode::BACKQUOTE, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, {{MF_CODE}}, KeyCode::9, {{MF_SHIFT_L}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, {{MF_CODE}}, KeyCode::0</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_UP, {{MF_CODE}}, KeyCode::BACKQUOTE</autogen>
+    </block><!-- End of Left Side -->
+    
+    <!-- Right Side -->
+    <block>
+      <!-- Top2 -->
+      <autogen>__KeyToKey__ KeyCode::7, {{MF_CODE}}, KeyCode::KEYPAD_SLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, {{MF_CODE}}, KeyCode::KEYPAD_MULTIPLY</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, {{MF_CODE}}, KeyCode::KEYPAD_EQUAL</autogen>
+      <!-- Middle1 -->
+      <autogen>__KeyToKey__ KeyCode::Y, {{MF_CODE}}, KeyCode::KEYPAD_7</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, {{MF_CODE}}, KeyCode::KEYPAD_8</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, {{MF_CODE}}, KeyCode::KEYPAD_9</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::SHIFT_R | {{MF_CODE}}, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, {{MF_CODE}}, KeyCode::KEYPAD_MINUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, {{MF_CODE}}, KeyCode::DELETE</autogen>
+      <!-- Middle2 -->
+      <autogen>__KeyToKey__ KeyCode::H, {{MF_CODE}}, KeyCode::KEYPAD_4</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, {{MF_CODE}}, KeyCode::KEYPAD_5</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, {{MF_CODE}}, KeyCode::KEYPAD_6</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, {{MF_CODE}}, KeyCode::KEYPAD_PLUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::RETURN, {{MF_CODE}}, KeyCode::RETURN</autogen>
+      <!-- Bottom1 -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_0, {{MF_CODE}}, KeyCode::KEYPAD_CLEAR</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, {{MF_CODE}}, KeyCode::KEYPAD_1</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, {{MF_CODE}}, KeyCode::KEYPAD_2</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, {{MF_CODE}}, KeyCode::KEYPAD_3</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, {{MF_CODE}}, KeyCode::KEYPAD_DOT</autogen>
+      <!-- Bottom2 -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, {{MF_CODE}}, KeyCode::ENTER</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_2, {{MF_CODE}}, KeyCode::KEYPAD_0</autogen>
+      
+    </block><!-- End of Right Side -->
+    
+    <!-- Ignore unremapped keys -->
+    <autogen>
+      __DropAllKeys__ {{MF_CODE}},
+      Option::DROPALLKEYS_DROP_KEY,
+      Option::DROPALLKEYS_DROP_CONSUMERKEY,
+      Option::DROPALLKEYS_DROP_POINTINGBUTTON,
+    </autogen>
+    
+  </item><!-- End of Code -->
+</root>

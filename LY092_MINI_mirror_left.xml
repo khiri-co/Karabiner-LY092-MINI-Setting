@@ -1,0 +1,97 @@
+<root>
+  <item>
+    <name>Mirror Left (Dvorak-QWERTY)</name>
+    <identifier>my_remap.4ly092_mini.mirror_left</identifier>
+    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    
+    <modifier_not>
+      ModifierFlag::LYMINI_MOUSE_KEY_MODE,
+      ModifierFlag::LYMINI_CODE_MODE,
+    </modifier_not>
+    
+    <!-- for Modifier -->
+    <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
+      
+    <block>
+      <!-- Dovark Part -->
+      <modifier_not>
+        ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
+        ModifierFlag::CONTROL_L, ModifierFlag::CONTROL_R
+      </modifier_not>
+      <!-- Top1 --> <!-- No Change -->
+      <!-- Top2 -->
+      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::BRACKET_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::BRACKET_LEFT</autogen>
+      <!-- Middle1 -->
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::EQUAL</autogen>
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::SLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::L</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::R</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::C</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::G</autogen>
+      <!-- Middle2 -->
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::MINUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::S</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::H</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::D</autogen>
+      <!-- Bottom1 -->
+      <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::Z</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::V</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::W</autogen>
+      <!-- <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::M</autogen> --> <!-- No Change -->
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::B</autogen>
+      <!-- <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::DELETE</autogen> --> <!-- No Change -->
+    </block>
+    
+    <!-- Left Side -->
+    <block>
+      <!-- QWERTY Part -->
+      <!-- Top1 -->
+      <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F13</autogen>
+      <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F12</autogen>
+      <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ KeyCode::PAGEUP, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F7</autogen>
+      <!-- Top2 -->
+      <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::BACKSLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::EQUAL</autogen>
+      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::MINUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::0</autogen>
+      <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::9</autogen>
+      <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::8</autogen>
+      <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::7</autogen>
+      <!-- Middle1 -->
+      <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::RETURN</autogen>
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::BRACKET_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::BRACKET_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::P</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::O</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::I</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::U</autogen>
+      <!-- Middle2 -->
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::QUOTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::L</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::H</autogen>
+      <!-- Bottom1 -->
+      <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::SLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::DOT</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::COMMA</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::M</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::DELETE</autogen>
+      <!-- Bottom2 -->
+      <!-- no effect
+      <autogen>__KeyToKey__ KeyCode::VK_MODIFIER_EXTRA1, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_MODIFIER_EXTRA6</autogen>
+      <autogen>__KeyToKey__ KeyCode::VK_MODIFIER_EXTRA2, ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_MODIFIER_EXTRA5</autogen>
+      -->
+    </block>
+    
+    </item><!-- End of Mirror Left -->
+</root>

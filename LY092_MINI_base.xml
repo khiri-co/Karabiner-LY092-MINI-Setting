@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<root>
+
+  <devicevendordef>
+    <vendorname>LingYao_ShangHai</vendorname>
+    <vendorid>0x04b4</vendorid>
+  </devicevendordef>
+  
+  <deviceproductdef>
+    <productname>Thumb_Keyboard_LY092_MINI</productname>
+    <productid>0x0818</productid>
+  </deviceproductdef>
+  
+  <modifierdef>LYMINI_FN_LEFT_MODE</modifierdef>
+  <modifierdef>LYMINI_FN_RIGHT_MODE</modifierdef>
+  <modifierdef>LYMINI_MIRROR_LEFT_MODE</modifierdef>
+  <modifierdef>LYMINI_MIRROR_RIGHT_MODE</modifierdef>
+  <modifierdef>LYMINI_MOUSE_KEY_MODE</modifierdef>
+  <modifierdef>LYMINI_CODE_MODE</modifierdef>
+  
+  <item>
+    <name>For Thumb_Keyboard (LY092-MINI)</name>
+    
+    <include path="LY092_MINI_fn_left.xml" />
+    <include path="LY092_MINI_fn_right.xml" />
+    <include path="LY092_MINI_mirror_left.xml" />
+    <include path="LY092_MINI_mirror_right.xml" />
+    <include path="LY092_MINI_mouse.xml" />
+    <include path="LY092_MINI_code.xml" />
+    
+    <item>
+      <name>Basic (Dvorak-QWERTY)</name>
+      <identifier>remap.my_remap.4ly092_mini.base</identifier>
+      <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+      
+      <block>
+        <modifier_not>
+          ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
+          ModifierFlag::CONTROL_L, ModifierFlag::CONTROL_R
+        </modifier_not>
+        <!-- Dvorak Part -->
+        <!-- Left Side -->
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, KeyCode::F</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, KeyCode::D</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_UP, KeyCode::B</autogen>
+        <include path="snippets_dvorak.xml" />
+      </block>
+      
+      
+      <!-- Left Side -->
+      <block>
+        <autogen>__KeyToKey__ KeyCode::PAGEUP, KeyCode::F7</autogen>
+        <autogen>__KeyToKey__ KeyCode::PAGEDOWN, KeyCode::7</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, KeyCode::Y</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, KeyCode::H</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_UP, KeyCode::N</autogen>
+        
+        <!--
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::VK_MODIFIER_LYMINI_FN_LEFT_MODE</autogen>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::VK_MODIFIER_LYMINI_MOUSE_KEY_MODE</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</autogen>
+        -->
+        
+        <!-- To Cmd (with Kana/Eisuu) -->
+        <autogen>__KeyOverlaidModifier__ KeyCode::CURSOR_LEFT, ModifierFlag::SHIFT_L, KeyCode::COMMAND_L, ModifierFlag::SHIFT_L, KeyCode::JIS_KANA</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::CURSOR_LEFT, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+        
+      </block><!-- End of Left Side -->
+      
+      <!-- Right Side -->
+      <block>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_0, KeyCode::DELETE</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_1, KeyCode::SPACE</autogen>
+        
+        <!--
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_2, KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_6, KeyCode::VK_MODIFIER_LYMINI_MOUSE_KEY_MODE</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_7, KeyCode::VK_MODIFIER_LYMINI_FN_RIGHT_MODE</autogen>
+        -->
+        
+        <!-- To Cmd (with Kana/Eisuu) -->
+        <autogen>__KeyOverlaidModifier__ KeyCode::KEYPAD_3, ModifierFlag::SHIFT_R, KeyCode::COMMAND_L, ModifierFlag::SHIFT_R, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::KEYPAD_3, KeyCode::COMMAND_L, KeyCode::JIS_KANA</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_4, KeyCode::OPTION_R</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_5, KeyCode::CONTROL_R</autogen>
+        
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_8, KeyCode::SHIFT_R</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_SLASH, KeyCode::F13</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_MULTIPLY, KeyCode::BACKQUOTE</autogen>
+        
+        <!-- SWAP Delete with Backslash(\) -->
+        <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::BACKSLASH</autogen>
+        <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::DELETE</autogen>
+      </block><!-- End of Right Side -->
+      
+    </item><!-- End of Basic -->
+    
+    
+  </item><!-- End of Thumb_Keyboard -->
+</root>

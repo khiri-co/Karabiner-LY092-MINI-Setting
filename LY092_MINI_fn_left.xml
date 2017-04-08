@@ -1,0 +1,78 @@
+<root>
+  <item>
+    <name>Fn Left</name>
+    <identifier>my_remap.4ly092_mini.fn_left</identifier>
+    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    
+    <modifier_not>
+      ModifierFlag::LYMINI_MOUSE_KEY_MODE,
+      ModifierFlag::LYMINI_CODE_MODE,
+    </modifier_not>
+    
+    <!-- Left side -->
+    <block>
+      <!-- for Modifier -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::VK_MODIFIER_LYMINI_FN_LEFT_MODE</autogen>
+      
+       <!-- for Cursor -->
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_RIGHT</autogen>
+      <!-- for PageUp/PageDown/Home/End -->
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEUP</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEDOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::HOME</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::END</autogen>
+      <!-- for Fuctions -->
+      <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F3</autogen>
+      <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F4</autogen>
+      <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F5</autogen>
+      <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F6</autogen>
+      <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+      <!-- for others -->
+      <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_POWER</autogen>
+    </block>
+    
+    <!-- Right side -->
+    <block>
+      <!-- for Fuctions -->
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F12</autogen>
+      <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F13</autogen>
+      <!-- for Media -->
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+      <!-- for others -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_MULTIPLY, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_EJECT</autogen>
+      <autogen>__KeyToKey__ KeyCode::RETURN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::ENTER</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::FORWARD_DELETE</autogen>
+    </block>
+    
+    <!-- for Space To Space -->
+    <block>
+      <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::SPACE</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, ModifierFlag::LYMINI_FN_LEFT_MODE
+      , KeyCode::SPACE</autogen>
+    </block>
+    
+    <!-- Ignore unremapped keys -->
+    <autogen>
+      __DropAllKeys__ ModifierFlag::LYMINI_FN_LEFT_MODE,
+      Option::DROPALLKEYS_DROP_KEY,
+      Option::DROPALLKEYS_DROP_CONSUMERKEY,
+      Option::DROPALLKEYS_DROP_POINTINGBUTTON,
+    </autogen>
+    
+    </item><!-- End of Fn Left -->
+</root>
