@@ -8,7 +8,8 @@
   
   <deviceproductdef>
     <productname>Thumb_Keyboard_LY092_MINI</productname>
-    <productid>0x0818</productid>
+    <productid>0x0818</productid> <!-- Left -->
+    <productid>0x0828</productid> <!-- Right -->
   </deviceproductdef>
   
   <modifierdef>LYMINI_FN_LEFT_MODE</modifierdef>
