@@ -13,25 +13,54 @@
     <block>
       <!-- for Modifier -->
       <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::VK_MODIFIER_LYMINI_FN_LEFT_MODE</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
       
-       <!-- for Cursor -->
-      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_UP</autogen>
-      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_DOWN</autogen>
-      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_RIGHT</autogen>
-      <!-- for PageUp/PageDown/Home/End -->
-      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEUP</autogen>
-      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEDOWN</autogen>
-      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::HOME</autogen>
-      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::END</autogen>
-      <!-- for Fuctions -->
-      <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F1</autogen>
-      <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F2</autogen>
-      <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F3</autogen>
-      <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F4</autogen>
-      <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F5</autogen>
-      <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F6</autogen>
-      <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+      <block>
+        <!-- With Mirror_L -->
+        <!-- for Fuctions -->
+        <!-- <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F14</autogen> --> <!-- No change -->
+        <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F13</autogen>
+        <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F12</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F11</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F10</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F9</autogen>
+        <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F8</autogen>
+        <!-- <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F7</autogen> --> <!-- No change -->
+        <!-- for Media -->
+        <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+        <!-- for others -->
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_EJECT</autogen>
+        <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::ENTER</autogen>
+      </block>
+      
+      <block>
+        <!-- Without Mirror_L -->
+        <modifier_not>ModifierFlag::LYMINI_MIRROR_LEFT_MODE</modifier_not>
+        <!-- for Cursor -->
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_RIGHT</autogen>
+        <!-- for PageUp/PageDown/Home/End -->
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEUP</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEDOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::HOME</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::END</autogen>
+        <!-- for Fuctions -->
+        <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F14</autogen>
+        <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F1</autogen>
+        <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F2</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F3</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F4</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F5</autogen>
+        <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F6</autogen>
+        <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+      </block>
       <!-- for others -->
       <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_POWER</autogen>
     </block>
