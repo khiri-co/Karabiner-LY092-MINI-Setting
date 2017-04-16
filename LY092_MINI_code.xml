@@ -75,7 +75,7 @@
         <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::LYMINI_CODE_MODE, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_CODE_MODE, KeyCode::9, ModifierFlag::SHIFT_L</autogen>
-        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_CODE_MODE, KeyCode::0</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_CODE_MODE, KeyCode::0, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKQUOTE</autogen>
       </block><!-- End of Without Mirror_L -->
     </block><!-- End of Left Side -->
