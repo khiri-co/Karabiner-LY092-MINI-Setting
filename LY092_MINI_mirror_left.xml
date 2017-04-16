@@ -2,7 +2,7 @@
   <item>
     <name>Mirror Left (Dvorak-QWERTY)</name>
     <identifier>my_remap.4ly092_mini.mirror_left</identifier>
-    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    <device_only>DeviceVendor::LingYao_ShangHai<!--, DeviceProduct::Thumb_Keyboard_LY092_MINI--></device_only>
     
     <modifier_not>
       ModifierFlag::LYMINI_MOUSE_KEY_MODE,

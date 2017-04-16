@@ -6,11 +6,16 @@
     <vendorid>0x04b4</vendorid>
   </devicevendordef>
   
+  <!--
   <deviceproductdef>
-    <productname>Thumb_Keyboard_LY092_MINI</productname>
-    <productid>0x0818</productid> <!-- Left -->
-    <productid>0x0828</productid> <!-- Right -->
+    <productname>Thumb_Keyboard_LY092_MINI_L</productname>
+    <productid>0x0818</productid>
   </deviceproductdef>
+  <deviceproductdef>
+    <productname>Thumb_Keyboard_LY092_MINI_R</productname>
+    <productid>0x0828</productid>
+  </deviceproductdef>
+  -->
   
   <modifierdef>LYMINI_FN_LEFT_MODE</modifierdef>
   <modifierdef>LYMINI_FN_RIGHT_MODE</modifierdef>
@@ -32,7 +37,7 @@
     <item>
       <name>Basic (Dvorak-QWERTY)</name>
       <identifier>remap.my_remap.4ly092_mini.base</identifier>
-      <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+      <device_only>DeviceVendor::LingYao_ShangHai<!--, DeviceProduct::Thumb_Keyboard_LY092_MINI--></device_only>
       
       <block>
         <modifier_not>

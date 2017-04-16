@@ -17,7 +17,7 @@
   <item>
     <name>Fn2/Fn4 To Mouse/Scroll</name>
     <identifier>my_remap.4ly092_mini.fn2_fn5.left_mouse</identifier>
-    <device_only>DeviceVendor::LingYao_ShangHai, DeviceProduct::Thumb_Keyboard_LY092_MINI</device_only>
+    <device_only>DeviceVendor::LingYao_ShangHai<!--, DeviceProduct::Thumb_Keyboard_LY092_MINI--></device_only>
     
     
     <!-- for Modifier -->
