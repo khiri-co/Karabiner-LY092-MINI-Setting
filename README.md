@@ -41,6 +41,9 @@ with Control or Command
 ### Fn_R
 ![keyboard-layout(6).png](https://qiita-image-store.s3.amazonaws.com/0/45805/b0afe9fe-b39d-d981-a08b-7e1023edf82f.png)
 
+### Fn_L + Mirror_L / Fn_R + Mirror_R
+![keyboard-layout Fn + Mirror Modes.png](https://qiita-image-store.s3.amazonaws.com/0/45805/92b20e4b-9f3b-0e7e-278a-6bf156fa229d.png)
+
 ## Mirror Layer
 ![keyboard-layout(7).png](https://qiita-image-store.s3.amazonaws.com/0/45805/611f1bb8-02a0-3de3-cae1-1bfc43b04137.png)
 
@@ -48,4 +51,8 @@ with Control or Command
 ![keyboard-layout(8).png](https://qiita-image-store.s3.amazonaws.com/0/45805/a4449a51-dd91-9663-5e81-ef22bacd18f1.png)
 
 ## Code Layer
-![keyboard-layout(9).png](https://qiita-image-store.s3.amazonaws.com/0/45805/9de008a0-09cb-e997-7183-2689749dbf3c.png)
+![keyboard-layout Code Mode.png](https://qiita-image-store.s3.amazonaws.com/0/45805/3c3ab7de-2a24-f7ee-1f3a-022c34255c35.png)
+
+### Code+Mirror_L
+![keyboard-layout Code + Mirror_L Mode.png](https://qiita-image-store.s3.amazonaws.com/0/45805/d647fe16-754d-9abe-fa0a-53858bde6213.png)
+
