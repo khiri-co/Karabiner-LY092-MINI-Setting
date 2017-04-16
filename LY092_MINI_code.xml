@@ -1,17 +1,4 @@
 <root>
-  <replacementdef>
-    <replacementname>KC_CODE</replacementname>
-    <replacementvalue>KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</replacementvalue>
-  </replacementdef>
-  <replacementdef>
-    <replacementname>MF_CODE</replacementname>
-    <replacementvalue>ModifierFlag::LYMINI_CODE_MODE</replacementvalue>
-  </replacementdef>
-  <replacementdef>
-    <replacementname>MF_SHIFT_L</replacementname>
-    <replacementvalue>ModifierFlag::SHIFT_L</replacementvalue>
-  </replacementdef>
-  
   <item>
     <name>Code Symbols</name>
     <identifier>my_remap.4ly092_mini.code</identifier>
@@ -27,73 +14,105 @@
         <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::VK_LOCK_LYMINI_CODE_MODE_FORCE_ON</autogen>
       </block>
       <!-- When Code-Lock is on, Code Key down offs the Lock -->
-      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, {{MF_CODE}}, KeyCode::VK_LOCK_LYMINI_CODE_MODE_FORCE_OFF, {{KC_CODE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::LYMINI_CODE_MODE, KeyCode::VK_LOCK_LYMINI_CODE_MODE_FORCE_OFF, KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</autogen>
       <!-- Shift_L + Code Key down To Sticky-Code On -->
-      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_L, KeyCode::VK_STICKY_LYMINI_CODE_MODE_FORCE_ON, {{KC_CODE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_L, KeyCode::VK_STICKY_LYMINI_CODE_MODE_FORCE_ON, KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</autogen>
       
       <!-- Basic -->
-      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, {{KC_CODE}}</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
     </block>
     
     <!-- Left side -->
     <block>
-      <!-- Middle1 -->
-      <autogen>__KeyToKey__ KeyCode::Q, {{MF_CODE}}, KeyCode::1, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::W, {{MF_CODE}}, KeyCode::2, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::E, {{MF_CODE}}, KeyCode::3, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::R, {{MF_CODE}}, KeyCode::BRACKET_LEFT, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::T, {{MF_CODE}}, KeyCode::BRACKET_RIGHT, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, {{MF_CODE}}, KeyCode::BACKSLASH, {{MF_SHIFT_L}}</autogen>
-      <!-- Middle2 -->
-      <autogen>__KeyToKey__ KeyCode::A, {{MF_CODE}}, KeyCode::4, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::S, {{MF_CODE}}, KeyCode::5, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::D, {{MF_CODE}}, KeyCode::6, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::F, {{MF_CODE}}, KeyCode::BRACKET_LEFT</autogen>
-      <autogen>__KeyToKey__ KeyCode::G, {{MF_CODE}}, KeyCode::BRACKET_RIGHT</autogen>
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, {{MF_CODE}}, KeyCode::BACKSLASH</autogen>
-      <!-- Bottom1 -->
-      <autogen>__KeyToKey__ KeyCode::Z, {{MF_CODE}}, KeyCode::7, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::X, {{MF_CODE}}, KeyCode::8, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::C, {{MF_CODE}}, KeyCode::BACKQUOTE, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::V, {{MF_CODE}}, KeyCode::9, {{MF_SHIFT_L}}</autogen>
-      <autogen>__KeyToKey__ KeyCode::B, {{MF_CODE}}, KeyCode::0</autogen>
-      <autogen>__KeyToKey__ KeyCode::CURSOR_UP, {{MF_CODE}}, KeyCode::BACKQUOTE</autogen>
+      <block>
+        <!-- With Mirror_L -->
+        <!-- Top2 -->
+        <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_CLEAR</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_SLASH</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_MULTIPLY</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_EQUAL</autogen>
+        <!-- Middle1 -->
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_7</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_8</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_9</autogen>
+        <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_MINUS</autogen>
+        <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::ENTER</autogen>
+        <!-- Middle2 -->
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_4</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_5</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_6</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_PLUS</autogen>
+        <!-- Bottom1 -->
+        <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_0</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_1</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_2</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_3</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::KEYPAD_DOT</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::LYMINI_CODE_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::DELETE</autogen>
+        <!-- Bottom2 -->
+      </block><!-- End of With Mirror_L -->
+      
+      <block>
+        <!-- Without Mirror_L -->
+        <modifier_not>ModifierFlag::LYMINI_MIRROR_LEFT_MODE</modifier_not>
+        <!-- Middle1 -->
+        <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_CODE_MODE, KeyCode::1, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_CODE_MODE, KeyCode::2, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_CODE_MODE, KeyCode::3, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+        <!-- Middle2 -->
+        <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_CODE_MODE, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_CODE_MODE, KeyCode::5, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_CODE_MODE, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_RIGHT</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKSLASH</autogen>
+        <!-- Bottom1 -->
+        <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::LYMINI_CODE_MODE, KeyCode::7, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::LYMINI_CODE_MODE, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_CODE_MODE, KeyCode::9, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::LYMINI_CODE_MODE, KeyCode::0</autogen>
+        <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKQUOTE</autogen>
+      </block><!-- End of Without Mirror_L -->
     </block><!-- End of Left Side -->
     
     <!-- Right Side -->
     <block>
       <!-- Top2 -->
-      <autogen>__KeyToKey__ KeyCode::7, {{MF_CODE}}, KeyCode::KEYPAD_SLASH</autogen>
-      <autogen>__KeyToKey__ KeyCode::8, {{MF_CODE}}, KeyCode::KEYPAD_MULTIPLY</autogen>
-      <autogen>__KeyToKey__ KeyCode::9, {{MF_CODE}}, KeyCode::KEYPAD_EQUAL</autogen>
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_SLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_MULTIPLY</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_EQUAL</autogen>
       <!-- Middle1 -->
-      <autogen>__KeyToKey__ KeyCode::Y, {{MF_CODE}}, KeyCode::KEYPAD_7</autogen>
-      <autogen>__KeyToKey__ KeyCode::U, {{MF_CODE}}, KeyCode::KEYPAD_8</autogen>
-      <autogen>__KeyToKey__ KeyCode::I, {{MF_CODE}}, KeyCode::KEYPAD_9</autogen>
-      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::SHIFT_R | {{MF_CODE}}, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
-      <autogen>__KeyToKey__ KeyCode::O, {{MF_CODE}}, KeyCode::KEYPAD_MINUS</autogen>
-      <autogen>__KeyToKey__ KeyCode::BACKSLASH, {{MF_CODE}}, KeyCode::DELETE</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_7</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_8</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_9</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::SHIFT_R | ModifierFlag::LYMINI_CODE_MODE, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_MINUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::LYMINI_CODE_MODE, KeyCode::DELETE</autogen>
       <!-- Middle2 -->
-      <autogen>__KeyToKey__ KeyCode::H, {{MF_CODE}}, KeyCode::KEYPAD_4</autogen>
-      <autogen>__KeyToKey__ KeyCode::J, {{MF_CODE}}, KeyCode::KEYPAD_5</autogen>
-      <autogen>__KeyToKey__ KeyCode::K, {{MF_CODE}}, KeyCode::KEYPAD_6</autogen>
-      <autogen>__KeyToKey__ KeyCode::L, {{MF_CODE}}, KeyCode::KEYPAD_PLUS</autogen>
-      <autogen>__KeyToKey__ KeyCode::RETURN, {{MF_CODE}}, KeyCode::RETURN</autogen>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_4</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_5</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_6</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_PLUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::RETURN, ModifierFlag::LYMINI_CODE_MODE, KeyCode::RETURN</autogen>
       <!-- Bottom1 -->
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_0, {{MF_CODE}}, KeyCode::KEYPAD_CLEAR</autogen>
-      <autogen>__KeyToKey__ KeyCode::N, {{MF_CODE}}, KeyCode::KEYPAD_1</autogen>
-      <autogen>__KeyToKey__ KeyCode::M, {{MF_CODE}}, KeyCode::KEYPAD_2</autogen>
-      <autogen>__KeyToKey__ KeyCode::COMMA, {{MF_CODE}}, KeyCode::KEYPAD_3</autogen>
-      <autogen>__KeyToKey__ KeyCode::DOT, {{MF_CODE}}, KeyCode::KEYPAD_DOT</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_0, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_CLEAR</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_1</autogen>
+      <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_2</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_3</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_DOT</autogen>
       <!-- Bottom2 -->
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, {{MF_CODE}}, KeyCode::ENTER</autogen>
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_2, {{MF_CODE}}, KeyCode::KEYPAD_0</autogen>
-      
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, ModifierFlag::LYMINI_CODE_MODE, KeyCode::ENTER</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_2, ModifierFlag::LYMINI_CODE_MODE, KeyCode::KEYPAD_0</autogen>
     </block><!-- End of Right Side -->
     
     <!-- Ignore unremapped keys -->
     <autogen>
-      __DropAllKeys__ {{MF_CODE}},
+      __DropAllKeys__ ModifierFlag::LYMINI_CODE_MODE,
       Option::DROPALLKEYS_DROP_KEY,
       Option::DROPALLKEYS_DROP_CONSUMERKEY,
       Option::DROPALLKEYS_DROP_POINTINGBUTTON,
