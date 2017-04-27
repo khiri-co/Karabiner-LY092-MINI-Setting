@@ -51,8 +51,11 @@ with Control or Command
 ![keyboard-layout(8).png](https://qiita-image-store.s3.amazonaws.com/0/45805/a4449a51-dd91-9663-5e81-ef22bacd18f1.png)
 
 ## Code Layer
+### ver.1
 ![keyboard-layout Code Mode.png](https://qiita-image-store.s3.amazonaws.com/0/45805/3c3ab7de-2a24-f7ee-1f3a-022c34255c35.png)
 
-### Code+Mirror_L
+#### Code+Mirror_L
 ![keyboard-layout Code + Mirror_L Mode.png](https://qiita-image-store.s3.amazonaws.com/0/45805/d647fe16-754d-9abe-fa0a-53858bde6213.png)
 
+### ver.2
+![keyboard-layout Code v2.png](https://qiita-image-store.s3.amazonaws.com/0/45805/7cc77980-f9e6-8627-f053-6319cb488f69.png)
