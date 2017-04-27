@@ -33,6 +33,7 @@
     <include path="LY092_MINI_mirror_right.xml" />
     <include path="LY092_MINI_mouse.xml" />
     <include path="LY092_MINI_code.xml" />
+    <include path="LY092_MINI_code_v2.xml" />
     
     <item>
       <name>Basic (Dvorak-QWERTY)</name>

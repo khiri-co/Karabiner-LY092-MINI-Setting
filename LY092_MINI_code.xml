@@ -1,6 +1,6 @@
 <root>
   <item>
-    <name>Code Symbols</name>
+    <name>Code Mode</name>
     <identifier>my_remap.4ly092_mini.code</identifier>
     <device_only>DeviceVendor::LingYao_ShangHai<!--, DeviceProduct::Thumb_Keyboard_LY092_MINI--></device_only>
     
