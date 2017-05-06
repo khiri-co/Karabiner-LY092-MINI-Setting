@@ -1,0 +1,127 @@
+<root>
+  <item>
+    <name>Fn Left v2</name>
+    <identifier>my_remap.4ly092_mini.fn_left_v2</identifier>
+    <device_only>DeviceVendor::LingYao_ShangHai<!--, DeviceProduct::Thumb_Keyboard_LY092_MINI--></device_only>
+    
+    <modifier_not>
+      ModifierFlag::LYMINI_MOUSE_KEY_MODE,
+      ModifierFlag::LYMINI_CODE_MODE,
+    </modifier_not>
+    
+    <!-- Left side -->
+    <block>
+      <!-- for Modifier -->
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::VK_MODIFIER_LYMINI_FN_LEFT_MODE</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
+      
+      <block>
+        <!-- With Mirror_L -->
+        <!-- for Fuctions -->
+        <!-- <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F14</autogen> --> <!-- No change -->
+        <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F13</autogen>
+        <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F12</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F11</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F10</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F9</autogen>
+        <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F8</autogen>
+        <!-- <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::F7</autogen> --> <!-- No change -->
+        <!-- for Media -->
+        <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+        <!-- for Comsumerkeys -->
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_EJECT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+        <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+        <autogen>__KeyToKey__ KeyCode::PAGEUP, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+        <!-- for others -->
+        <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::LYMINI_FN_LEFT_MODE | ModifierFlag::LYMINI_MIRROR_LEFT_MODE, KeyCode::ENTER</autogen>
+      </block>
+      
+      <block>
+        <!-- Without Mirror_L -->
+        <modifier_not>ModifierFlag::LYMINI_MIRROR_LEFT_MODE</modifier_not>
+        <!-- for Cursor -->
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::CURSOR_RIGHT</autogen>
+        <!-- for PageUp/PageDown/Home/End -->
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEUP</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::PAGEDOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::HOME</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::END</autogen>
+        <!-- for Fuctions -->
+        <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F14</autogen>
+        <autogen>__KeyToKey__ KeyCode::1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F1</autogen>
+        <autogen>__KeyToKey__ KeyCode::2, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F2</autogen>
+        <autogen>__KeyToKey__ KeyCode::3, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F3</autogen>
+        <autogen>__KeyToKey__ KeyCode::4, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F4</autogen>
+        <autogen>__KeyToKey__ KeyCode::5, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F5</autogen>
+        <autogen>__KeyToKey__ KeyCode::6, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F6</autogen>
+        <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+        <!-- for Comsumerkeys -->
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_POWER</autogen>
+        <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::MISSION_CONTROL</autogen>
+        <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::LAUNCHPAD</autogen>
+        <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_KEYBOARDLIGHT_LOW</autogen>
+        <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_KEYBOARDLIGHT_HIGH</autogen>
+        <autogen>__KeyToKey__ KeyCode::PAGEUP, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+      </block>
+    </block>
+    
+    <!-- Right side -->
+    <block>
+      <!-- for Comsumerkeys -->
+      <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+      <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+      <autogen>__KeyToKey__ KeyCode::F9, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+      <autogen>__KeyToKey__ KeyCode::F10, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::F11, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_MULTIPLY, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_EJECT</autogen>
+      <!-- for Fuctions -->
+      <autogen>__KeyToKey__ KeyCode::7, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ KeyCode::8, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ KeyCode::9, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ KeyCode::0, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F12</autogen>
+      <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::F13</autogen>
+      <!-- for Media -->
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+      <!-- for others -->
+      <autogen>__KeyToKey__ KeyCode::RETURN, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::ENTER</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::FORWARD_DELETE</autogen>
+    </block>
+    
+    <!-- for Space To Space -->
+    <block>
+      <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::SPACE</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_1, ModifierFlag::LYMINI_FN_LEFT_MODE, KeyCode::SPACE</autogen>
+    </block>
+    
+    <!-- Ignore unremapped keys -->
+    <autogen>
+      __DropAllKeys__ ModifierFlag::LYMINI_FN_LEFT_MODE,
+      Option::DROPALLKEYS_DROP_KEY,
+      Option::DROPALLKEYS_DROP_CONSUMERKEY,
+      Option::DROPALLKEYS_DROP_POINTINGBUTTON,
+    </autogen>
+    
+    </item><!-- End of Fn Left -->
+</root>

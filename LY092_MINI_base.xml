@@ -28,7 +28,9 @@
     <name>For Thumb_Keyboard (LY092-MINI)</name>
     
     <include path="LY092_MINI_fn_left.xml" />
+    <include path="LY092_MINI_fn_left_v2.xml" />
     <include path="LY092_MINI_fn_right.xml" />
+    <include path="LY092_MINI_fn_right_v2.xml" />
     <include path="LY092_MINI_mirror_left.xml" />
     <include path="LY092_MINI_mirror_right.xml" />
     <include path="LY092_MINI_mouse.xml" />
