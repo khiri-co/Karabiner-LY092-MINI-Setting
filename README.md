@@ -35,14 +35,18 @@ with Control or Command
 ![keyboard-layout(4).png](https://qiita-image-store.s3.amazonaws.com/0/45805/5b42fc17-628c-45df-9179-2dccc32d24f2.png)
 
 ## Fn Layer
-### Fn_L
+### ver.1
+#### Fn_L
 ![keyboard-layout(5).png](https://qiita-image-store.s3.amazonaws.com/0/45805/aa362a0e-7170-71f5-89ea-b41953b157c9.png)
 
-### Fn_R
+#### Fn_R
 ![keyboard-layout(6).png](https://qiita-image-store.s3.amazonaws.com/0/45805/b0afe9fe-b39d-d981-a08b-7e1023edf82f.png)
 
-### Fn_L + Mirror_L / Fn_R + Mirror_R
+#### Fn_L + Mirror_L / Fn_R + Mirror_R
 ![keyboard-layout Fn + Mirror Modes.png](https://qiita-image-store.s3.amazonaws.com/0/45805/92b20e4b-9f3b-0e7e-278a-6bf156fa229d.png)
+
+### ver.2
+![keyboard-layout fn v2.png](https://qiita-image-store.s3.amazonaws.com/0/45805/57978c4b-11bc-020b-ab24-8c6aac4c8ca9.png)
 
 ## Mirror Layer
 ![keyboard-layout(7).png](https://qiita-image-store.s3.amazonaws.com/0/45805/611f1bb8-02a0-3de3-cae1-1bfc43b04137.png)
@@ -59,3 +63,8 @@ with Control or Command
 
 ### ver.2
 ![keyboard-layout Code v2.png](https://qiita-image-store.s3.amazonaws.com/0/45805/7cc77980-f9e6-8627-f053-6319cb488f69.png)
+
+## Cheatsheet
+![keyboard-layout (LY092-MINI) Cheatsheet.png](https://qiita-image-store.s3.amazonaws.com/0/45805/d332db9b-888a-ef33-b871-cf7f1f01c11b.png)
+
+Legend: ![keyboard-layout Legend.png](https://qiita-image-store.s3.amazonaws.com/0/45805/52d77e79-89e9-82bc-16e0-e76487bb97ef.png)
