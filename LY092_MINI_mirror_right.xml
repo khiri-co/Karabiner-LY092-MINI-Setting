@@ -23,8 +23,8 @@
       <!-- Top1 --> <!-- No change with QWERTY -->
       <!-- Top2 --> <!-- No change with QWERTY -->
       <!-- Middle1 -->
-      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::G</autogen>
-      <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::F</autogen>
       <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::Y</autogen>
       <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::P</autogen>
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::DOT</autogen>
@@ -67,8 +67,8 @@
       <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::2</autogen>
       <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::1</autogen>
       <!-- Middle1 -->
-      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::U</autogen>
-      <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::Y</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::U</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::Y</autogen>
       <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::T</autogen>
       <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::R</autogen>
       <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::LYMINI_MIRROR_RIGHT_MODE, KeyCode::E</autogen>

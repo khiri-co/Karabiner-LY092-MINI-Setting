@@ -65,14 +65,14 @@
         <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::LYMINI_CODE_MODE, KeyCode::7, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::LYMINI_CODE_MODE, KeyCode::8, ModifierFlag::SHIFT_L</autogen>
-        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_CODE_MODE, KeyCode::9, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
         <!-- Middle2 -->
         <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BACKSLASH</autogen>
         <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::LYMINI_CODE_MODE, KeyCode::4, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::LYMINI_CODE_MODE, KeyCode::5, ModifierFlag::SHIFT_L</autogen>
-        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_CODE_MODE, KeyCode::6</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::LYMINI_CODE_MODE, KeyCode::6, ModifierFlag::SHIFT_L</autogen>
         <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_LEFT</autogen>
         <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::LYMINI_CODE_MODE, KeyCode::BRACKET_RIGHT</autogen>
         <!-- Bottom1 -->
