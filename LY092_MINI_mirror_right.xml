@@ -11,7 +11,20 @@
     </modifier_not>
     
     <!-- for Modifier -->
-    <autogen>__KeyToKey__ KeyCode::KEYPAD_2, KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE</autogen>
+    <block>
+      <!-- <autogen>__KeyToKey__ KeyCode::KEYPAD_2, KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE</autogen> -->
+      <!-- Mirror_R To Kana (Eisuu with Shift_R) -->
+      <autogen>__KeyOverlaidModifier__
+        KeyCode::KEYPAD_2, ModifierFlag::NONE | ModifierFlag::SHIFT_R,
+        KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE, ModifierFlag::SHIFT_R,
+        KeyCode::JIS_EISUU
+      </autogen>
+      <autogen>__KeyOverlaidModifier__
+        KeyCode::KEYPAD_2,
+        KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE,
+        KeyCode::JIS_KANA
+      </autogen>
+    </block>
     
     <block>
       <!-- Dvorak Part -->

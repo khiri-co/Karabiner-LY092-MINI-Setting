@@ -13,7 +13,6 @@
     <block>
       <!-- for Modifier -->
       <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::VK_MODIFIER_LYMINI_FN_LEFT_MODE</autogen>
-      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
       
       <block>
         <!-- With Mirror_L -->

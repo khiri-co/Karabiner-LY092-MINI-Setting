@@ -20,7 +20,6 @@
       
       <!-- Basic -->
       <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, KeyCode::VK_MODIFIER_LYMINI_CODE_MODE</autogen>
-      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
     </block>
     
     <!-- Left side -->

@@ -18,7 +18,6 @@
     <block>
       <!-- for Modifier -->
       <autogen>__KeyToKey__ KeyCode::KEYPAD_7, KeyCode::VK_MODIFIER_LYMINI_FN_RIGHT_MODE</autogen>
-      <autogen>__KeyToKey__ KeyCode::KEYPAD_2, KeyCode::VK_MODIFIER_LYMINI_MIRROR_RIGHT_MODE</autogen>
       
       <block>
         <!-- With Mirror_R -->

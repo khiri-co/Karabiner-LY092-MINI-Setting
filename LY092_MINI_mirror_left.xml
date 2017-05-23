@@ -10,8 +10,21 @@
     </modifier_not>
     
     <!-- for Modifier -->
-    <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen>
-      
+    <block>
+      <!-- <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE</autogen> -->
+      <!-- Mirror_L To Eisuu (Kana with Shift_L) -->
+      <autogen>__KeyOverlaidModifier__
+        KeyCode::CURSOR_RIGHT, ModifierFlag::NONE | ModifierFlag::SHIFT_L,
+        KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE, ModifierFlag::SHIFT_L,
+        KeyCode::JIS_KANA
+      </autogen>
+      <autogen>__KeyOverlaidModifier__
+        KeyCode::CURSOR_RIGHT,
+        KeyCode::VK_MODIFIER_LYMINI_MIRROR_LEFT_MODE,
+        KeyCode::JIS_EISUU
+      </autogen>
+    </block>
+    
     <block>
       <!-- Dovark Part -->
       <modifier_not>
